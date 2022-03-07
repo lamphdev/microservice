@@ -7,7 +7,11 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 @Data
-public class CreatePropertyRequest {
+public class UpdatePropertyRequest {
+
+    @NotEmpty
+    @Length(max = 100)
+    private String code;
 
     @NotEmpty
     @Length(max = 100)
