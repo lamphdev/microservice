@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .layout-nav {
+    width: 250px;
+  }
+
+  .layout-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+  }
+}
